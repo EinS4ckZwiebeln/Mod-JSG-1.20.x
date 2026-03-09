@@ -1,6 +1,7 @@
 package dev.tauri.jsg.api;
 
 import dev.tauri.jsg.api.client.LoadersHolder;
+import dev.tauri.jsg.api.helper.dimension.IStargateDimensionManager;
 import dev.tauri.jsg.api.stargate.network.IStargateNetwork;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -28,6 +29,12 @@ public class JSGApi {
     public static MinecraftServer currentServer = null;
     public static Supplier<BiFunction<String, Class<?>, LoadersHolder>> loadersHolderGetter;
     public static Class<?> jsgModMainClass;
+
+    /**
+     * The stargate dimension manager instance.
+     * Set by the mod implementation at startup.
+     */
+    public static IStargateDimensionManager dimensionManager = null;
 
     /**
      * Contains las pos of player (client side) - helps to debug sound in main menu.

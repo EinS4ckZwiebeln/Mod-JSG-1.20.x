@@ -4,7 +4,8 @@ public enum StargateAddressCheckResult {
     OK,
     MALFORMED,
     TARGET_BUSY,
-    NOT_ENOUGH_POWER;
+    NOT_ENOUGH_POWER,
+    SAME_DIMENSION;
 
     public StargateOpenResult toOpenResult() {
         return switch (this) {
@@ -12,6 +13,7 @@ public enum StargateAddressCheckResult {
             case MALFORMED -> StargateOpenResult.ADDRESS_MALFORMED;
             case TARGET_BUSY -> StargateOpenResult.CALLER_HUNG_UP;
             case NOT_ENOUGH_POWER -> StargateOpenResult.NOT_ENOUGH_POWER;
+            case SAME_DIMENSION -> StargateOpenResult.SAME_DIMENSION;
         };
     }
 
@@ -21,6 +23,7 @@ public enum StargateAddressCheckResult {
             case MALFORMED -> StargateConnectResult.ADDRESS_MALFORMED_SGN_OK;
             case TARGET_BUSY -> StargateConnectResult.TARGET_BUSY;
             case NOT_ENOUGH_POWER -> StargateConnectResult.NOT_ENOUGH_POWER;
+            case SAME_DIMENSION -> StargateConnectResult.SAME_DIMENSION;
         };
     }
 }

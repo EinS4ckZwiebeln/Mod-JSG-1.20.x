@@ -9,6 +9,7 @@ public enum StargateOpenResult {
 	CALLER_HUNG_UP,
 	GATE_BURRIED,
 	TARGET_GATE_BURRIED,
+	SAME_DIMENSION,
 	SYMBOL_ADDED;
 	
 	public boolean ok() {

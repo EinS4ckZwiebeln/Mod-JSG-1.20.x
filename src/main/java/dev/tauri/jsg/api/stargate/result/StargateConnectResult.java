@@ -9,7 +9,8 @@ public enum StargateConnectResult {
     ALREADY_CONNECTED,
     TARGET_BUSY,
     GATE_BURRIED,
-    TARGET_GATE_BURRIED;
+    TARGET_GATE_BURRIED,
+    SAME_DIMENSION;
 
     public boolean ok() {
         return this == OK;

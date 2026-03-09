@@ -32,4 +32,17 @@ public interface IStargateNetwork {
     void removeStargate(StargatePos stargatePos);
 
     void renameStargate(StargatePos pos, String newName);
+
+    /**
+     * Checks whether two stargate positions are in the same dimension.
+     * Within the same dimension, connections between two stargates are not allowed.
+     *
+     * @param source The source stargate position.
+     * @param target The target stargate position.
+     * @return true if both stargates are in the same dimension.
+     */
+    default boolean areInSameDimension(StargatePos source, StargatePos target) {
+        if (source == null || target == null) return false;
+        return source.dimension.equals(target.dimension);
+    }
 }
