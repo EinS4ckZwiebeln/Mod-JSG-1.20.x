@@ -21,7 +21,7 @@ Tutorial can be found [here](https://www.youtube.com/watch?v=Adrj8sjAyC8).
 If you prefer reading, you can try our [wiki](https://wiki.justsgmod.eu) (in 6 languages)
 ***
 ## **Repository-based feature overview**
-This repository is the public API/resources snapshot for JSG 1.20.x, so the overview below is limited to features that are directly evidenced by the files in this repo.
+This repository is the public API/resources snapshot for JSG 1.20.x, so the overview below is limited to features that are directly evident in the files in this repo.
 
 ### **Core progression and travel**
 - Stargates are the center of the mod's progression loop. The API exposes Milky Way, Pegasus, Universe, Tollan, Orlin and Movie gate variants.
@@ -30,13 +30,13 @@ This repository is the public API/resources snapshot for JSG 1.20.x, so the over
 - The advancement data shows a structured progression tree with 215 advancement files, including milestones for trading with priests, riding a Mastadge, building Orlin's gate and learning the mod's early-game systems.
 
 ### **Items and crafting materials**
-- The English localization currently defines **220 JSG item names**, covering raw ores, ingots, nuggets, dusts, plates, gears and utility components.
+- In this snapshot, the English localization defines **220 JSG item names**, covering raw ores, ingots, nuggets, dusts, plates, gears and utility components.
 - Core materials include **Titanium, Trinium and Naquadah** in multiple processing stages, including raw, refined and alloyed Naquadah variants.
 - Crystal-based components are a major part of crafting, with blue, red, ender, yellow, white and Pegasus crystals used for DHDs and address systems.
 - Support items include notebook pages, cartridges, chalk, control circuits, shield emitters, pestles, chocolate bars, lemons and several music discs.
 
 ### **Blocks, machines and structures**
-- The localization defines **167 primary JSG block names** in this snapshot.
+- In this snapshot, the localization defines **167 primary JSG block names**.
 - Gate construction blocks are available for Milky Way, Pegasus, Universe, Tollan, Movie and Orlin Stargates, each with base, ring and chevron parts where applicable.
 - DHD blocks exist for Milky Way and Pegasus networks, and the tooltips describe them as the control panels for dialing gates.
 - Other named functional blocks in this snapshot include capacitor banks, redstone dial/state blocks, a toaster and a printer.
